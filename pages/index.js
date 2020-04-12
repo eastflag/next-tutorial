@@ -1,10 +1,12 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
 
-export default () =>
-  <div>
-    <Link href="/product">Product</Link>
+export default function Index() {
+  return (
     <div>
-      Welcome to next.js!
+      <Link href="/about">
+        <a>About Page</a>
+      </Link>
+      <p>Hello Next.js</p>
     </div>
-  </div>
+  );
+}
